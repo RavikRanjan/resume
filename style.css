@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bgimg.png);
+    background-repeat: no-repeat;
+}
+nav{
+    height: 80px;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 80px;
+}
+nav .logo{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+}
+nav ul li a:hover{
+    color: red;
+}
+nav .menu-btn{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media screen and (max-width : 768px) {
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: blue;
+        height: auto;
+        width: 100%;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        /* transition: all 0.3s ease; */
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    /* #click:checked ~ .menu-btn:before{
+        content: "\F62A";
+    } */
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover{
+        color: red;
+        background-color: rgb(98, 98, 243);
+    }
+    nav .menu-btn{
+        display: block;
+    }
+    nav{
+        padding: 0px 50px 0px 30px;
+    }
+    .addr{
+        width: 300px;
+    }
+}
+
+/* nav{
+    background-color: blue;
+    color: white;
+    display: block;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    color: white;
+    list-style: none;
+    margin: 15px;
+    padding: 10px;
+    float: right;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+ .topnav{
+    /* background-image: linear-gradient(rgb(242, 95, 195), rgb(230, 235, 230), rgba(110, 68, 251, 0.822)); */
+    /* background-color: rgb(78, 49, 242);
+    width: 100%;
+    height: 70px;
+    display: block;
+    justify-items: flex-start;
+} */ 
+.topnav a{
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px
+    
+}
+.topnav a:hover{
+    color: rgb(249, 246, 246);
+}
+.topnav .icon{
+    display: none;
+} */
+
+#ravi{
+    float: left;
+    color: black;
+    padding: 10;
+    margin:10px;
+    /* margin-left: 30px; */
+    
+}
+.smlimg img{
+    height: 150px;
+    width: 150px;
+    justify-items: center;
+    place-items: center;
+    background-color: white;
+    padding: 2px;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 15%;
+}
+
+
+.smlimg h1{
+    color: rgb(245, 244, 249);
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.smlimg h2{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* .smlimg h1, h2{
+    background-color: black;
+    max-width: 500px;
+    justify-items: center;
+    justify-content: center;
+    display: block;
+    margin-left: 450px;
+} */
+.about{
+    margin-top: 90px;
+    background-color: rgba(160, 160, 160, 0.882);
+}
+.rvg img{
+    height: 500px;
+    width: 400px;
+    margin-top: 60px;
+}
+.content h1, h3, p{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content h1{
+    border-bottom: 3px solid white;
+    width: 100px;
+}
+.addr{
+    border: 1px solid white;
+    padding: 10px;
+    float: left;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.addr h6{
+    float: right; 
+    justify-content: right; 
+    color: black;
+}
+input{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.btncv{
+    margin-bottom: 20px;
+}
+.service{
+    background-color: aliceblue;
+    padding-bottom: 15px;
+}
+/* font */
+.icon{
+    color: rgb(243, 10, 10);
+    font-weight: bold;
+    font-size: 56px;
+    margin: 10px;
+}
+#education{
+    background-color: rgb(133, 133, 133);
+    margin-bottom: -10px;
+    color: #fff;
+}
+table{
+    color: #fff;
+    margin: 10px;
+}
+#education h1{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: yellowgreen;
+    margin-top: -20px;
+}
+.service h6{
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+.service h2{
+    font-weight: bold;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+}
+.project h1{
+    text-align: center;
+    background-color: rgb(133, 133, 133);
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+}
+#project{
+    background-color: rgba(224, 220, 220, 0.915);
+}
+.card img{
+    padding: 5px;
+    border: 1px solid black;
+}
+.pcotact h3{
+    color: red;
+}
+.pcotact p{
+    margin-left: 30px;
+}
+#footer{
+    background-color: black;
+    display: block;
+    margin-top: 10px;
+    height: 50px;
+}
+#footer p{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+#contact{
+    background-color: rgba(244, 235, 201, 0.892);
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, 
+}
+@media screen and (max-width: 576px) {
+    .addr{
+        width: 350px;
+    }
+    .addr h6{
+        float: left;
+    }
+    /* .col{
+        margin-left: 50px;
+    } */
+    #footer{
+        height: 80px;
+    }
+    .card 
+    {
+        width: none;
+    }
+}
